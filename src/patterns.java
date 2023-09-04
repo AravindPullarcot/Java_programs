@@ -35,7 +35,8 @@ public class patterns {
             for(int j=4;j<i;j++){
                 System.out.print("");
             }
-            System.out.print("X");
+                System.out.print("X");
         }
+       
     }
 }
