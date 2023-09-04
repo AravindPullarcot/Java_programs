@@ -35,6 +35,13 @@ public class palindrome {
                     ar[l-1-i]=usr.charAt(i);
                 }
                 System.out.print(ar);
+                System.out.print(usr);//all the array varaibles are correct but still not printing
+                if(ar.equals(usr))
+                    System.out.println("Given String is a Pallindrome");               
+                else {
+                    System.out.println("Given String is not a pallindrome");
+                }
+                
 
         }
 
