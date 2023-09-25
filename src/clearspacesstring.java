@@ -5,7 +5,13 @@ public class clearspacesstring {
         System.out.println("Give the strings");
         Scanner scanner = new Scanner(System.in);
         String user_input = scanner.nextLine();
-        char[] array=user_input.toCharArray();
+        char[] array = user_input.toCharArray();
+        clearspaces(array);
+
+    }
+
+    public static void clearspaces(char[] array){
+
         StringBuilder new_array=new StringBuilder();
        /* String user_input2=user_input.replace(" ","");
         System.out.println(user_input2);*/ //using predefined function

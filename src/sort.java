@@ -21,10 +21,7 @@ public class sort {
         for (int i = 0; i <n; i++) {
             for (int j = 0; j <(n - i)-1; j++) {
                 if (new_array[j] > new_array[j + 1]) {
-                    temp = new_array[j];
-                    new_array[j] = new_array[j + 1];
-                    new_array[j + 1] = temp;
-
+                  swap(new_array,j);
                 }
             }
         }
@@ -32,5 +29,12 @@ public class sort {
         for (int i = 0; i < n; i++) {
             System.out.print(new_array[i] + " ");
         }
+    }
+    public static void swap(int [] new_array,int j){
+        int temp=0;
+        temp = new_array[j];
+        new_array[j] = new_array[j + 1];
+        new_array[j + 1] = temp;
+
     }
 }
